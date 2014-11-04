@@ -1,0 +1,411 @@
+/* ==========================================================================
+		   #Default
+============================================================================= */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    background-color: #F2F3F7;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.container
+{
+    width:100%;
+    position:relative;
+}
+
+.wrapper
+{
+    background-color: #ffffff;
+    margin: 40px auto 0;
+    border: 10px solid #E0E0E0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 990px;
+}
+
+
+.header{
+    text-align: center;
+    padding: 60px 0 0;
+    font-size: 60px;
+    font-family: 'Pacifico', cursive;
+}
+
+.header #logo a{
+    text-decoration: none;
+}
+
+
+.description
+{
+    text-align: center;
+    font-weight: bold;
+    padding: 60px 0 0;
+    font-size:30px;
+}
+
+
+.template
+{
+    width: 300px;
+    float:left;
+    margin:20px 5px;
+    text-align:center;
+}
+
+.template a
+{
+    display: block;
+    padding: 5px 0;
+    color: #000;
+    font-weight: bold;
+}
+
+.template a:visited
+{
+    color: #000;
+}
+
+.template img
+{
+    width: 80%;
+}
+
+
+.footer, .footer a
+{
+    text-align: center;    
+    color: #45619D;
+}
+
+
+.social-icons .twitter a
+{
+    color: #55ACEE;
+}
+
+.social-icons .facebook a
+{
+    color: #45619D;
+}
+
+.social-icons .github a
+{
+    color: #000000;
+}
+
+.social-icons .googleplus a
+{
+    color: #D73D32;
+}
+
+.social-icons .email a
+{
+    color: #FFB900;
+}
+
+.footer a:hover {
+    color: #555555;
+}
+
+.social-icons li
+{
+    float:left;
+    margin:10px;
+}
+
+/* ==========================================================================
+		   #Responsive
+============================================================================= */
+
+@media screen and (min-width: 0) {
+    .wrapper
+    {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .wrapper
+    {
+        width: 460px;
+    }
+    .template
+    {
+        width: 440px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper
+    {
+        width: 720px;
+    }
+    .template
+    {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper
+    {
+        width: 960px;
+    }
+    .template
+    {
+        width: 300px;
+    }
+}
+
+/* ==========================================================================
+		   #Custom
+============================================================================= */
+
+/* start grid template styles */
+.wrapper-grid
+{
+    background-color: rgba(255,255,255,0.8);
+    border-color: #DFDFD7;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+/* end grid template styles */
+
+/* start slider template styles */
+.wrapper-slider
+{
+    background-color: rgba(255,255,255,0.6);
+    border-color: #D6C6AF;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+/* end slider template styles */
+
+
+/* ==========================================================================
+		   #TitTic
+============================================================================= */
+
+/* TicTic */
+.counter {
+    width: 660px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.chart-set {
+    position: relative;
+    float: left;
+    margin: 10px;
+}
+
+.chart-summary {
+    padding: 10px 0;
+}
+
+.chart, .baby-heart {
+    position: absolute;
+}
+
+.chart-title {
+    text-align: center;
+}
+
+    .chart-title span {
+        display: block;
+    }
+
+    .chart-title .count {
+        font-weight: bold;
+    }
+
+@media screen and (min-width: 0) {
+    .counter
+    {
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .counter {
+        width: 220px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .counter
+    {
+        width: 660px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .counter
+    {
+        width: 660px;
+    }
+}
+/* end TicTic */
+
+
+/* ==========================================================================
+		   #Grid
+============================================================================= */
+
+/* start grid */
+.ri-grid{
+	margin: 0 auto;
+	/*position: relative;*/
+	height: auto;
+    position: fixed;
+    top: 0;
+}
+
+.ri-grid ul {
+	list-style: none;
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* Clear floats by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.ri-grid ul:before,
+.ri-grid ul:after{
+	content: '';
+    display: table;
+}
+
+.ri-grid ul:after {
+    clear: both;
+}
+
+.ri-grid ul {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+} 
+
+.ri-grid ul li {
+	-webkit-perspective: 400px;
+	-moz-perspective: 400px;
+	-o-perspective: 400px;
+	-ms-perspective: 400px;
+	perspective: 400px;	
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	background: #000;
+}
+
+.ri-grid ul li a{
+	display: block;
+	outline: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #333;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+/* Grid wrapper sizes */
+.ri-grid-size-1{
+	width: 55%;
+}
+.ri-grid-size-2{
+	width: 100%;
+}
+.ri-grid-size-3{
+	width: 100%;
+	margin-top: 0px;
+}
+
+/* Shadow style */
+.ri-shadow:after,
+.ri-shadow:before{
+	content: "";
+	position: absolute;
+	z-index: -2;
+	bottom: 15px;
+	left: 10px;
+	width: 50%;
+	height: 20%;
+	max-width: 300px;
+	max-height: 100px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	-ms-transform: rotate(-3deg);
+	-o-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+}
+.ri-shadow:after{
+	right: 10px;
+	left: auto;
+	-webkit-transform: rotate(3deg);
+	-moz-transform: rotate(3deg);
+	-ms-transform: rotate(3deg);
+	-o-transform: rotate(3deg);
+	transform: rotate(3deg);
+}
+
+.ri-grid-loading:after,
+.ri-grid-loading:before{
+	display: none;
+}
+
+.ri-loading-image{
+	display: none;
+}
+
+.ri-grid-loading .ri-loading-image{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	margin: 100px 0 0 -15px;
+	display: block;
+}
+/* end grid */
