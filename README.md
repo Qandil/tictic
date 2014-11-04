@@ -1,7 +1,7 @@
 tictic
 ======
 
-Javascript pregnancy ticker!
+Javascript pregnancy ticker. <a href="http://tictic.issaqandil.com/">See demo!</a>
 
 Credits
 =======
